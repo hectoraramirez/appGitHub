@@ -1,6 +1,19 @@
 # AppGitHub
+Test project for check skills of developer front-end
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) 
+version 11.0.3.
+
+### Start
+```bash
+# clone the repo
+$ git clone https://github.com/hectoraramirez/appGitHub.git
+
+# go to the directory
+$ cd appGitHub
+
+# install dependencies
+$ npm install
 
 ## Development server
 
