@@ -4,16 +4,16 @@ Test project for check skills of developer front-end
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) 
 version 11.0.3.
 
-### Start
-# clone the repo
+# Start
+## clone the repo
 ```bash
 $ git clone https://github.com/hectoraramirez/appGitHub.git
 ```
-# go to the directory
+## go to the directory
 ```bash
 $ cd appGitHub
 ```
-# install dependencies
+## install dependencies
 ```bash
 $ npm install
 ```
