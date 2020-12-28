@@ -1,0 +1,28 @@
+.oneSectionA {
+  animation: backInLeft;
+  animation-duration: 3s;
+}
+
+.oneSectionB {
+  animation: backInRight;
+  animation-duration: 3s;
+}
+
+.twoSection {
+  animation: fadeInDown;
+  animation-duration: 3s;
+  background-color: rgba(255, 255, 255,1.0);
+  color: rgba(87, 96, 111,1.0)
+}
+
+.main-header {
+  background: url("../../../assets/img1.png");
+  background-size: cover;
+  max-height: 700px;
+}
+
+.background-overlay {
+  background: rgba(6, 82, 221,.4);
+  padding: 1px 1px 1px 1px;
+}
+

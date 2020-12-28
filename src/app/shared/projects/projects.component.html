@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="card-default mt-4 mb-5 shadow fontBody">
+    <div class="card-header bg-primary text-white text-center">
+      <div class="card-title"><i class="fas fa-project-diagram"></i> My repos</div>
+    </div>
+    <div class="card-body bg-white">
+      <div class="d-grid gap-2">
+        <ng-template ngFor [ngForOf]="projects" let-id="index" let-pro>
+          <button class="btn btn-outline-primary" type="button" (click)="getCommits(pro.name)"><i class="fas fa-project-diagram"></i> {{pro.name}}</button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

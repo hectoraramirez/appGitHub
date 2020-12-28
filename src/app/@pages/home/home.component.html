@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-4 projects">
+      <app-projects (repoName)="getAllCommits($event)"></app-projects>
+    </div>
+    <div class="col-8">
+      <app-table-commits [commits]="commits" ></app-table-commits>
+    </div>
+  </div>
+</div>

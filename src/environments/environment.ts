@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  urlGit: "https://api.github.com/",
+  tokenGit: "Token: 0b8a1d31e7fd730f951f317ce32cc4cd017bd25a",
   production: false
 };
 

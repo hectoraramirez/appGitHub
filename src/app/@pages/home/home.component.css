@@ -1,0 +1,21 @@
+.imgBackGround {
+  background: url("../../../assets/img2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  max-height: 1000px;
+}
+
+.imgBackGround-overlay {
+  background: rgba(6, 82, 221,.4);
+  padding: 1px 1px 1px 1px;
+
+}
+
+.projects {
+  animation: bounceInUp;
+  animation-duration: 2s;
+}
+
+
