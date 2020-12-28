@@ -10,13 +10,13 @@
         <h1><i class="fas fa-info-circle"></i> Select a repo</h1>
       </div>
       <div class="table-responsive-md" *ngIf="commits.length > 0">
-        <table class="table table-striped fontCommit">
+        <table class="table table-striped fontCommit" style="width: 100%;">
           <thead>
             <tr class="text-center text-primary">
-              <th scope="col" class="bg-primary text-white" ><i class="fas fa-code-branch"></i></th>
-              <th scope="col" class="bg-primary text-white" ><i class="fas fa-user-alt"></i> Autor</th>
-              <th scope="col" class="bg-primary text-white" ><i class="far fa-calendar-alt"></i> Date</th>
-              <th scope="col" class="bg-primary text-white" ><i class="far fa-comment-alt"></i> Comment</th>
+              <th scope="col" class="bg-primary text-white" style="width: 15%;"><i class="fas fa-code-branch"></i></th>
+              <th scope="col" class="bg-primary text-white" style="width: 15%;"><i class="fas fa-user-alt"></i> Autor</th>
+              <th scope="col" class="bg-primary text-white" style="width: 15%;"><i class="far fa-calendar-alt"></i> Date</th>
+              <th scope="col" class="bg-primary text-white" style="width: 55%;"><i class="far fa-comment-alt"></i> Comment</th>
             </tr>
           </thead>
           <tbody>
@@ -25,7 +25,7 @@
                 <th scope="row"><i class="fas fa-code-branch"></i></th>
                 <td class="ps-2 pe-2">{{commit.commit.author.name}}</td>
                 <td >{{commit.commit.author.date | date:'medium'}}</td>
-                <td >{{commit.commit.message}}</td>
+                <td >{{commit.commit.message | slice:0:75}}</td>
               </tr>
             </ng-template>
           </tbody>
