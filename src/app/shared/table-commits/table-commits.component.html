@@ -1,18 +1,16 @@
 <div class="container repoActivity">
-  <div *ngIf="commits.length == 0">
-    <div class="alert alert-light mt-5 text-center text-primary" role="alert">
-      <h1><i class="fas fa-info-circle"></i> Select a repo</h1>
-    </div>
-  </div>
-  <div class="card-default mt-4 mb-5 shadow fontBody" *ngIf="commits.length > 0">
+  <div  class="card-default mt-4 mb-5 shadow fontBody" >
     <div class="card-header bg-primary text-white">
       <div class="card-title text-center">
-        <i class="fas fa-history"></i> Historial Commits
+        <h3><em class="fas fa-history"></em> Historial Commits</h3>
       </div>
     </div>
     <div class="card-body text-white bg-white">
-      <div class="table-responsive-md">
-        <table class="table table-bordered border-primary">
+      <div class="alert alert-light mt-1 text-center text-primary" role="alert" *ngIf="commits.length == 0">
+        <h1><i class="fas fa-info-circle"></i> Select a repo</h1>
+      </div>
+      <div class="table-responsive-md" *ngIf="commits.length > 0">
+        <table class="table table-striped fontCommit">
           <thead>
             <tr class="text-center text-primary">
               <th scope="col" class="bg-primary text-white" ><i class="fas fa-code-branch"></i></th>
@@ -23,7 +21,7 @@
           </thead>
           <tbody>
             <ng-template ngFor [ngForOf]="commits" let-id="index" let-commit>
-              <tr class="text-center text-primary">
+              <tr class="text-center text-secondary">
                 <th scope="row"><i class="fas fa-code-branch"></i></th>
                 <td class="ps-2 pe-2">{{commit.commit.author.name}}</td>
                 <td >{{commit.commit.author.date | date}}</td>

@@ -3,10 +3,18 @@
   box-sizing: border-box;
 }
 
-.fontNavbar {
+.fontTechnologies {
   font-family: 'Audiowide', cursive;
+}
+
+.fontNavbar {
+  font-family: 'Frijole', cursive
 }
 
 .fontBody {
   font-family: 'Roboto', sans-serif;
+}
+
+.fontCommit {
+  font-family: 'Shadows Into Light', cursive;
 }
