@@ -24,7 +24,7 @@
               <tr class="text-center text-secondary">
                 <th scope="row"><i class="fas fa-code-branch"></i></th>
                 <td class="ps-2 pe-2">{{commit.commit.author.name}}</td>
-                <td >{{commit.commit.author.date | date}}</td>
+                <td >{{commit.commit.author.date | date:'medium'}}</td>
                 <td >{{commit.commit.message}}</td>
               </tr>
             </ng-template>

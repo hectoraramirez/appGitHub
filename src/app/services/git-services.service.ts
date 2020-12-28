@@ -34,4 +34,12 @@ export class GitServicesService {
     let head = new HttpHeaders().set("Authorization", this.token);
     return this.httpClient.get<any>(`${this.urlGit}repos/hectoraramirez/${repo}/commits`, {headers: head});
   }
+
+  /**
+   * get commit page
+   */
+  public getCommitsPage(repo: string, page:number): Observable<any> {
+    let head = new HttpHeaders().set("Authorization", this.token);
+    return this.httpClient.get<any>(`${this.urlGit}repos/hectoraramirez/${repo}/commits?per_page=6&page=${page}`, {headers: head});
+  }
 }
